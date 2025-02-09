@@ -1,0 +1,23 @@
+###
+POST http://localhost:8000/api/payments
+Content-Type: application/json
+
+{
+
+   "user_id":3,
+   "session_id":4,
+   "amount": 5000,
+   "payment_status":"paid",
+   "payment_date": "2025-02-05"
+}
+###
+PUT http://localhost:8000/api/payments/1
+Content-Type: application/json
+
+{
+
+     "payment_status":"not-paid"
+}
+###
+
+DELETE http://localhost:8000/api/payments/1
